@@ -4,10 +4,10 @@ import { useContext, useEffect } from 'react';
 import { Context } from '../../context/Context';
 
 const Main = () => {
-  const prompt1 = "Who are Visier Solution";
-  const prompt2 = "Resources provided by Visier Solution";
-  const prompt3 = "How is AI is good for your business";
-  const prompt4 = "Advantags of AI in HR";
+  const prompt1 = "Who are Intact Insurance";
+  const prompt2 = "Key Features of Intact Insurance";
+  const prompt3 = "What are the Specialty Insurance";
+  const prompt4 = "History of Intact Insurance";
 
   const { onSent, recentPrompt, showResult, resultData, setInput, input, loading } = useContext(Context);
 
@@ -40,7 +40,7 @@ const Main = () => {
   return (
     <div className='main'>
       <div className="nav">
-        <p>Visier Solution</p>
+        <p>Intact</p>
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
@@ -49,7 +49,7 @@ const Main = () => {
         <>
           <div className="greet">
               <p><span>Hello, User.</span></p>
-              <p>Welcome to the Visier Solution ChatBot</p>
+              <p>Welcome to Intact ChatBot</p>
           </div>
           <div className="cards">
               <div className="card" onClick={() => handleCardClick(prompt1)}>
